@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;         
+}
+
+section {
+    background: url('/static/images/background.png') no-repeat;
+    background-image: url(/static//images/background.png);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 80px); 
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+
+.main-container {
+    border: 2% solid black;
+    text-align: center;
+    padding: 0.1% 0.1%;
+    border-radius: 30%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    background-color: transparent;
+    display: flex;
+    margin: 0;       
+    height: 35vh;           
+    width: 55vw;            
+    justify-content: center;
+    align-items: center; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+    gap: 30px;
+
+}
+ 
+.description-txt {
+    margin: 0;
+    font-size:  150%;    
+}
+
+.subtitle-txt {
+    font-size:  400%;     
+    color: black;            
+    text-transform: uppercase;
+    margin-bottom: 10px;   
+    letter-spacing: 2px;     
+}
+
+.aboutwriting {
+    font-size: 120%;
+    background-color: white;
+    font-family: Garamond;
+    padding: 5% 7%;
+    border-radius: 20%;
+
+}
+ 
+.input-group {
+    margin: 20px 0px;
+    position: relative;
+
+}
+
+.input-group label {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 15px;
+    font-size: 16px;
+    pointer-events: none;
+    color: white;
+    padding: 0 5px;
+    transition: .5s;
+}
+
+.input-group input {
+    width: 360px;
+    height: 60px;
+    color: white;
+    font-size: 16px;
+    padding: 0 15px;
+    border: 1.2px solid;
+    background: transparent;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: 0px;
+    background: black;
+    font-size: 14px;
+}
